@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida sans Unicode', 'Lucida Grande', 'Lucida sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+#main {
+    width: 100%;
+    min-height: 100vh;
+}
+.top {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url('https://media.istockphoto.com/id/1132930101/photo/leadership-concept-with-paper-airplanes.jpg?s=612x612&w=0&k=20&c=GOzBz1_t9QscdF2F0ZfRkUghMHF6z4F8E1eFH6pCDRo=');
+    background-size: cover;
+    background-position: center;
+}
+.top .overlay{
+    position: relative;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.295);
+}
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 10vh;
+    color: white;
+    bottom: 5%;
+}
+.text h1{
+    font-weight: 600;
+    font-size: 4vw;
+}
+/*image text after*/
+.text .image{
+    background-image: url("https://media.istockphoto.com/id/472336288/photo/out-of-focus-office-open-corridor-background.jpg?s=612x612&w=0&k=20&c=pjhaH7F7qVH8ku0x-XxSUjeioXB-SKKeuHm715liNhQ=");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 220px;
+}
+.rtext{
+    display: flex;
+    width: 25%;
+    align-items: center;
+    justify-content: space-between;
+}
+.rtext p{
+    padding: 30px;
+    font-size: 15px;
+}
+.bottom{
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+}
+/*popular image*/
+.b1{
+    min-height: inherit;
+    width: 30%;
+    background-image: url('https://media.istockphoto.com/id/1182956407/photo/abstract-polygonal-blue-background.jpg?s=612x612&w=0&k=20&c=LEHGkQll-4bjl6bdW3oK12Etg54QneWwWQdZVmni1g0=');
+    background-size: cover;
+    background-position: center;
+}
+.b1 h1{
+    text-align: center;
+    padding: 30px;
+}
+.b1 p{
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Latest Image*/
+.b2{
+    width: 30%;
+    min-height: inherit;
+    display:flex;
+    flex-direction:column;
+}
+.b2 .up{
+    width: 100%;
+    min-height: 20vh;
+    background-image:url('https://media.istockphoto.com/id/1597475039/photo/abstract-colorful-glass-background.jpg?s=612x612&w=0&k=20&c=Gv5iCYYzRnE7F_RwFDacJGmEgLfArYnkeyORu1umeZM=');
+    background-size: cover;
+    background-position: center;
+}
+.b2 .up h1{
+    text-align: center;
+    padding: 30px;
+}
+.b2 .up p{
+    color: white;
+    text-align: center;
+    padding:15%;
+}
+.b2 .down{
+    width: 100%;
+    min-height: 20vh;
+    background-image: url('https://media.istockphoto.com/id/2055023629/photo/4k-beautiful-color-gradient-background-with-noise-abstract-pastel-holographic-blurred-grainy.jpg?s=612x612&w=0&k=20&c=l65_0xqN76oYzun9lKf_abnquQ7i8HF3pGkCnVbPKsE=');
+    background-size: cover;
+    background-position: center;
+}
+.b2 .down .overlay{
+    position: relative;
+    width: 100%;
+    min-height: 20vh;
+    background-color: rgba(255, 255, 255, 0.344);
+}
+.b3{
+    width: 40%;
+    min-height: inherit;
+    background-image: url('https://media.istockphoto.com/id/1138740533/photo/dark-blue-defocused-blurred-motion-abstract-background.jpg?s=612x612&w=0&k=20&c=QfnY1B69PD-FzeDCmwuJulHg1wawHotayzgeGjEuvCc=');
+    background-size: cover;
+    background-position: center;
+}
+.b3 .overlay{
+    justify-content: right;
+    position: relative;
+    margin-left: 50%;
+    width: 50%;
+    height: 100%;
+    padding: 4vw 3vh;
+}
+.b3 .overlay p{
+    padding: 1.2vh;
+}
+
+@media(max-width:700px){
+    .rtext{
+        flex-direction: column;
+    }
+    .b3 .overlay{
+        width: 100px;
+        margin-left: initial;
+    }
+}
+@media(max-width: 500px){
+    .text{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .text h1{
+        font-size: rvh;
+    }
+    .text .image{
+        height: 200px;
+        width: 140px;
+        margin-top: 20px;
+    }
+    .rtext{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .rtext p{
+        margin-top: 10px;
+    }
+    .icons{
+        margin-top: 10px;
+    }
+    .bottom{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .b1{
+        width: 100%;
+    }
+    .b2{
+        width:100%;
+    }
+    .b2 up{
+        min-height: 40vh;
+    }
+    .b3{
+        width: 100%;
+        background-position: left;
+    }
+}
